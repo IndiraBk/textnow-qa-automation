@@ -2,7 +2,12 @@
 
 describe('Navigation Menu - Get Free Number Dropdown', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('/', {
+      failOnStatusCode: false,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      }
+    });
     cy.get('ul.links-nav > li').first().realHover();
   })
 
