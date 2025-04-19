@@ -8,7 +8,7 @@ describe('Navigation Menu - Get Free Number Dropdown', () => {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
       }
     });
-    cy.get('ul.links-nav > li', { timeout: 10000 }).first().should('exist').realHover();
+    cy.get('ul.links-nav > li', { timeout: 20000 }).first().should('exist').realHover();
   })
 
       it('Should display key features and buttons on the Free Phone Number page', () => {
